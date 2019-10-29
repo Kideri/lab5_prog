@@ -56,18 +56,21 @@ public class Main {
 
 	private static boolean isGood (String toCheck) {
 		int cnt = 0;
-		System.out.println(toCheck);
 		for (int i = 0; i < toCheck.length(); i++) {
 			if (toCheck.charAt(i) == '{') {
 				cnt++;
 			} else if (toCheck.charAt(i) == '}') {
 				cnt--;
 			}
-			if (cnt <= 0) {
+			if (cnt < 0) {
 				return true;
 			}
 		}
-		return false;
+		if (cnt == 0) {
+			return true;
+		} else {
+			return false;
+		}
 	}
 
 	public static String jsonGetter (String toGet) {

@@ -2,6 +2,7 @@ import com.google.gson.Gson;
 import com.thoughtworks.xstream.XStream;
 import com.thoughtworks.xstream.io.xml.StaxDriver;
 import jdk.nashorn.internal.parser.Scanner;
+import au.com.bytecode.opencsv.CSVReader;
 
 import java.io.*;
 import java.util.Hashtable;
@@ -114,7 +115,8 @@ public class func {
         String element_key = parse_first(params);
         params = parse_other(params);
         Manga element;
-        params = Main.jsonGetter(params);try {
+        params = Main.jsonGetter(params);
+        try {
             element = gson.fromJson(params, Manga.class);
         } catch (Exception ex) {
             ex.printStackTrace();
