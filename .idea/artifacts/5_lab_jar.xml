@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="5_lab:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/5_lab_jar</output-path>
+    <root id="archive" name="5_lab.jar">
+      <element id="module-output" name="5_lab" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/xstream-1.4.11.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/xstream-benchmark-1.4.11.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/xstream-hibernate-1.4.11.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/xstream-jmh-1.4.11.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/gson-2.8.5.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
